@@ -1,0 +1,370 @@
+body{
+  width: 100%;
+}
+.center{
+  width: 1200px;
+  margin: 0 auto;
+}
+header h1{
+  display: inline-block;
+}
+.head-right{
+  padding-top: 17px;
+  width: 736px;
+}
+header input:nth-of-type(1){
+  height: 23px;
+  width: 185px;
+  border-radius: 12.5px 0 0 12.5px;
+  border: 1px solid #323232;
+  border-right: 0;
+  padding-left: 5px;
+  color: #aaaaaa;
+  margin-left: 400px;
+}
+header input:nth-of-type(2){
+  height: 25px;
+  width: 37px;
+  border-radius: 0 12.5px 12.5px 0;
+  border: 1px solid #323232;
+  border-left: 0;
+  background: white;
+  vertical-align: top;
+}
+header .iconfont{
+  color: #727272;
+}
+header button{
+  border:none;
+  background: white;
+  outline: none;
+  color: #666666;
+  font-weight: 800;
+  font-size: 14px;
+}
+header button:nth-of-type(1){
+  margin-left: 37px;
+}
+header a{
+  display: inline-block;
+  float: left;
+  font-size: 17px;
+  color: #363636;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 27px;
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+}
+header .active{
+  border-bottom: 2px solid #820a12;
+}
+/* 大图 */
+.bigpic{
+  position: relative;
+}
+.bigpic img{
+  width: 100%;
+  transition: all 1s;
+}
+.bigpic img+img{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+.bigpic img:nth-of-type(1){
+  opacity: 0;
+}
+.bigpic ul{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -42px;
+}
+.bigpic ul li{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: wheat;
+  float: left;
+  margin-left: 5px;
+}
+.bigpic img.active{
+  opacity: 1;
+}
+.bigpic ul li.active{
+  background: #8f8f8f;
+}
+.bigpic button{
+  display: none;
+}
+.bigpic ul li:hover{
+  cursor: pointer;
+}
+/* 选择拍摄地 */
+.place-box{
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+}
+.place-box-top .iconfont{
+  vertical-align: middle;
+}
+.place-box-top{
+  width: 1186px;
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #656565;
+  overflow: hidden;
+}
+.place-box-top span{
+  margin: 0 3px;
+}
+.place-box-top div{
+  float: right;
+}
+
+.place-box-top span:nth-of-type(2){
+  color: #656565;
+}
+.place-box-top span:nth-of-type(3){
+  color: #840a13;
+}
+.place-box-top span:hover{
+  cursor:pointer;
+}
+.place-box-left{
+  width: 127px;
+  height: 320px;
+  border-left: 1px solid #323232;
+}
+.place-box-left h2{
+  width: 125px;
+  height: 35px;
+  border-bottom: 1px solid #323232;
+  font-size: 22px;
+  color: #323232;
+  font-weight: 500;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+}
+.place-box-left>span{
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #656565;
+  vertical-align: bottom;
+}
+.place-box-left dl{
+  padding-left: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+.place-box-left dl dt{
+  font-size: 18px;
+  margin-top: 23px;
+  width: 117px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.place-box-left dd{
+  font-size: 14px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  color: #656565;
+  cursor: pointer;
+}
+.place-box-left .dd-box{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.place-box-left .dd-box.active{
+height: 142px;
+}
+.place-box-left dd:nth-last-of-type(1){
+  margin-bottom:0;
+}
+.place-box-left dd:nth-of-type(1){
+  margin-top: 13px;
+}
+.place-box-left dt .iconfont{
+  float: right;
+}
+.place-box-left i:hover{
+  cursor: pointer;
+}
+.place-box-left dt b{
+  font-weight: 500;
+}
+.place-box-left dt.active{
+  color: #850913;
+}
+.place-box-left dd.active{
+  color: #850913;
+  border-bottom: 1px solid #000;
+}
+.place-box-left dt span{
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #000;
+  text-align: center;
+  position: absolute;
+  left: -15px;
+  top: 3px;
+  opacity: 0;
+}
+.place-box-left dt span i{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #656565;
+  position: absolute;
+  top:2.5px;
+  left: 2.5px;
+}
+.place-box-left dt span.active{
+  opacity: 1;
+}
+.place-box-right{
+  width: 1005px;
+  height: 717px;
+  margin-top: 34px;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  transition:all 1s;
+}
+.place-box-right.active{
+  display: block;
+}
+.place-tit {
+  position: relative;
+  height: 52px;
+  width: 672px;
+}
+.place-tit span:nth-of-type(1){
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 23px;
+  margin-left: 9px;
+}
+.place-tit i{
+  display: inline-block;
+  width: 666px;
+  height: 1px;
+  background: white;
+  margin-left: 6px;
+}
+.place-box-right p{
+  width:1000px;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 30px;
+  color: #656565;
+  margin-top: 18px;
+  font-size: 16px;
+  text-indent: 2em;
+}
+.title{
+  width: 205px;
+  border-bottom: 1px solid #c46768;
+  padding-bottom: 10px;
+}
+.title span:nth-of-type(1){
+  color: #323232;
+  font-size: 20px;
+}
+.title span:nth-of-type(2){
+  color: #656565;
+  font-size: 14px;
+}
+.place-box-right div:nth-of-type(2){
+  overflow: hidden;
+}
+
+.position-box{
+  position: relative;
+  margin-left: 190px;
+}
+.place-box-right .bottompicture{
+  width: 317px;
+  height: 438px;
+  float: left;
+  margin-top: 60px;
+}
+.bottompicture img{
+  transition: all 0.8s;
+}
+.bottompicture div{
+  overflow: hidden;
+  width: 317px;
+  height: 360px;
+}
+.bottompicture+.bottompicture{
+  margin-left: 27px;
+  cursor: pointer;
+}
+.bottompicture:hover img{
+  transform: scale(1.2);
+}
+.bottompicture:hover span{
+  opacity: 0.7;
+}
+.bottompicture span{
+  display: block;
+  height: 74px;
+  width:217px;
+  background: #b49090;
+  position: absolute;
+  bottom: 67px;
+  padding: 0 50px;
+  color: white;
+  line-height: 22px;
+  padding-top: 39px;
+  opacity: 0;
+  font-size: 14px;
+  transition: all 0.8s;
+}
+.bottompicture p{
+  width: 297px;
+  color: #333333;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 20px;
+  letter-spacing: 3px;
+  margin-top: -50px;
+  transition: all 0.8s;
+}
+.bottompicture:hover p{
+  margin-top: 15px;
+  opacity: 1;
+}
+
+footer{
+  height: 95px;
+  width: 100%;
+  background: #656565;
+  line-height: 95px;
+}
+footer p{
+  display: block;
+  width: 1200px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+}
